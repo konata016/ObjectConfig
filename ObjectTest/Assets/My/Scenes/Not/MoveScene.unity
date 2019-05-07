@@ -182,7 +182,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 975799040}
-  - component: {fileID: 975799039}
   m_Layer: 0
   m_Name: CenterPos
   m_TagString: Untagged
@@ -190,20 +189,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &975799039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975799038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07b236e8a5e9d074b84a9e5d0dfac209, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterPos: {fileID: 1396148249}
-  RollSpeed: 3
 --- !u!4 &975799040
 Transform:
   m_ObjectHideFlags: 0

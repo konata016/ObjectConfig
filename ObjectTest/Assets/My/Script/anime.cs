@@ -21,8 +21,8 @@ public class anime : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) Anime.SetBool("IsLeft", true);
         else Anime.SetBool("IsLeft", false);
 
-        if (Input.GetKey(KeyCode.Space)) Anime.SetBool("IsDanage", true);
-        else Anime.SetBool("IsDanage", false);
+        if (Input.GetKey(KeyCode.Space)) Anime.SetBool("IsDamage", true);
+        else Anime.SetBool("IsDamage", false);
 
         if (!Input.anyKey) Anime.SetBool("IsFloat", true);
         else Anime.SetBool("IsFloat", false);
