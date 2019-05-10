@@ -170,7 +170,15 @@ PrefabInstance:
     - target: {fileID: 9500000, guid: 5e939d31e479aea48a49667d43553c79, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: d0f5a5c92bc03114a8ef048d70bddbd4, type: 2}
+      objectReference: {fileID: 9100000, guid: 8c9f2ac593f4de841aa8e4b8a7c68eba, type: 2}
+    - target: {fileID: 9500000, guid: 5e939d31e479aea48a49667d43553c79, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 5e939d31e479aea48a49667d43553c79, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e939d31e479aea48a49667d43553c79, type: 3}
 --- !u!1 &975799038
@@ -349,6 +357,7 @@ GameObject:
   - component: {fileID: 1396148252}
   - component: {fileID: 1396148251}
   - component: {fileID: 1396148250}
+  - component: {fileID: 1396148254}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -420,6 +429,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1396148254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396148249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19342ce573dd9194cb979e3670cc0960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 2033109551}
+  Pos: {x: 0, y: 0, z: -4}
 --- !u!1 &1625410118
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +734,18 @@ MonoBehaviour:
   MaxSpeed: 5
   Inertia: 1
   Txt: {fileID: 1951553759}
+--- !u!114 &2033109553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033109551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4074b3e883082429c52c5cf1644179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &2033109555
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -739,7 +774,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 14
   m_CollisionDetection: 0
 --- !u!114 &2033109557
 MonoBehaviour:
